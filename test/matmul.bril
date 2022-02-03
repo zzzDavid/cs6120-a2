@@ -106,12 +106,12 @@
   ret;
 }
 
-# ARGS: 50 109658
-@main(size: int, seed: int) {
+@main() {
   one: int = const 1;
   rng: ptr<int> = alloc one;
   store rng seed;
-  sqsize: int = mul size size;
+  size: int = const 4;
+  sqsize: int = const 16;
   arr1: ptr<int> = call @randarray sqsize rng;
   arr2: ptr<int> = call @randarray sqsize rng;
   dest: ptr<int> = call @randarray sqsize rng;
