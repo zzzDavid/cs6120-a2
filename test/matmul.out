@@ -1,0 +1,5 @@
+Function randarray allocates 64 bytes
+Function main allocates 4 bytes
+Function randarray is called 3 times
+Function main is called 1 times
+memory footprint analysis: 196 bytes are allocated in total.
